@@ -14,16 +14,9 @@ def haversine(lat1, lon1, lat2, lon2):
     """
     lon1, lat1, lon2, lat2 = map(math.radians, [lon1, lat1, lon2, lat2])
 
-    print("lon1", lon1)
-    print("lat1", lat1)
-    print("lon2", lon2)
-    print("lat2", lat2)
-
     # haversine formula
     lng = lon2 - lon1
     lat = lat2 - lat1
-    print("lng", lng)
-    print("lat", lat)
 
     a = math.sin(lat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(lng / 2) ** 2
     c = 2 * math.asin(math.sqrt(a))
