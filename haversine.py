@@ -18,7 +18,10 @@ def haversine(lat1, lon1, lat2, lon2):
     lng = lon2 - lon1
     lat = lat2 - lat1
 
-    a = math.sin(lat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(lng / 2) ** 2
+    a = (
+        math.sin(lat / 2) ** 2
+        + math.cos(lat1) * math.cos(lat2) * math.sin(lng / 2) ** 2
+    )
     c = 2 * math.asin(math.sqrt(a))
     r = 6371.0088  # 6371 km is the radius of the Earth
     print("a", a)
