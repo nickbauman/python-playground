@@ -1,6 +1,6 @@
 import unittest
 
-from remove_dupes_sorted_array import remove_dupes_sorted_array
+from src.remove_dupes_sorted_array import remove_dupes_sorted_array
 
 
 class remove_dupes_sorted_array_test(unittest.TestCase):

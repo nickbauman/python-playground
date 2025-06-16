@@ -1,6 +1,6 @@
 import unittest
 
-from convert_personel_format import convert_personel_format
+from src.convert_personel_format import convert_personel_format
 
 """
 Rename keys:
@@ -47,7 +47,6 @@ def new_format_data():
 
 
 class ConvertPersonelFormatTest(unittest.TestCase):
-
     def test_convert_personel_format(self):
         result = convert_personel_format(old_format_data())
         self.assertEqual(result, new_format_data())

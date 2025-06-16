@@ -1,10 +1,9 @@
 import unittest
 
-from haversine import haversine
+from src.haversine import haversine
 
 
 class HaversineTest(unittest.TestCase):
-
     def test_distance(self):
         paris = [48.8566, 2.3522]
         lyon = [45.7640, 4.8357]
