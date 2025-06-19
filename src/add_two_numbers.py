@@ -38,7 +38,7 @@ class AddTwo:
             val2 = l2.val if l2 else 0
 
             total = val1 + val2 + carry
-            carry = total // 10
+            carry = total // 10 # always use floor division if you want integer division with Python 3
             current.next = ListNode(total % 10)
             current = current.next
 
@@ -49,6 +49,7 @@ class AddTwo:
 
         digits = dummy_head.next
 
+        # Convert linked list to integer
         acc = []
         mult = 1
 
